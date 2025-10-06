@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container{
+  border: 1px solid rgba(119, 118, 118, 0.3);
+  padding: 1rem 3rem;
+  box-shadow: 0 0 6px 2px rgba(128, 128, 128, 0.3);
+  min-width: 25rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  justify-content: start;
+  align-items: center;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+}
+.icon img{
+  width: 100%;
+  height: 100%;
+}
+.heads h3{
+  font-size: clamp(1.1rem, 2vw, 3rem);
+  letter-spacing: -0.05rem;
+}
+form{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.input-container input{
+  padding: 0.6rem 1rem; 
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.input-container input:focus{
+  outline: 1px solid green;
+}
+.input-container input:focus::placeholder{
+  color: transparent;
+}
+.remember-forget{
+  width: 100%;
+}
+.input-remember{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  column-gap: 2rem;
+}
+.input-remember a{
+  text-decoration: none;
+  color:blue;
+}
+button{
+  padding: 0.6rem;
+  border: none;
+  background-color: rgb(1, 61, 61);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+}
+.para a{
+  text-decoration: none;
+  color:blue;
+  margin-left: 0.5rem;
+  
+}
+.para p{
+  font-size: 0.9rem;
+}
+
+/* Tablet */
+@media screen and (max-width: 1040px){
+  .container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-container{
+    border: 1px solid rgba(119, 118, 118, 0.3);
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0 6px 2px rgba(128, 128, 128, 0.3);
+    min-width: 20rem;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    justify-content: start;
+    align-items: center;
+  }
+}
